@@ -4,10 +4,13 @@ import yesol.core.member.Grade;
 import yesol.core.member.Member;
 import yesol.core.member.MemberService;
 import yesol.core.member.MemberServiceImpl;
+import yesol.core.order.AppConfig;
 
 public class MemberApp {
     public static void main(String[] args) {
-        MemberService memberService = new MemberServiceImpl();
+        AppConfig appConfig = new AppConfig();
+        MemberService memberService = appConfig.memberService();
+     //   MemberService memberService = new MemberServiceImpl();
 
         Member member = new Member( 1L, "memberA", Grade.VIP);
         memberService.join(member);
