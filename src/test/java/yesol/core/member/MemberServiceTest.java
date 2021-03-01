@@ -3,7 +3,7 @@ package yesol.core.member;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import yesol.core.order.AppConfig;
+import yesol.core.AppConfig;
 
 public class MemberServiceTest {
 

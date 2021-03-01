@@ -1,16 +1,13 @@
 package yesol.core.beanfind;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.NoUniqueBeanDefinitionException;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import yesol.core.member.Member;
 import yesol.core.member.MemberRepository;
 import yesol.core.member.MemoryMemberRepository;
-import yesol.core.order.AppConfig;
 
 import java.util.Map;
 

@@ -1,8 +1,10 @@
 package yesol.core.discount;
 
+import org.springframework.stereotype.Component;
 import yesol.core.member.Grade;
 import yesol.core.member.Member;
 
+@Component
 public class RateDiscountPoicy implements DiscountPolicy{
     private int discountPercent = 10;
 

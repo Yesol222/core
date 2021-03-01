@@ -1,4 +1,4 @@
-package yesol.core.order;
+package yesol.core;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -9,7 +9,10 @@ import yesol.core.member.MemberRepository;
 import yesol.core.member.MemberService;
 import yesol.core.member.MemberServiceImpl;
 import yesol.core.member.MemoryMemberRepository;
+import yesol.core.order.OrderService;
+import yesol.core.order.OrderServiceImpl;
 
+//수동 등록 configuration
 @Configuration
 public class AppConfig {
 

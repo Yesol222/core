@@ -1,9 +1,15 @@
 package yesol.core.member;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class MemberServiceImpl implements MemberService{
 
     //private final MemberRepository memberRepository = new MemoryMemberRepository();
     public final MemberRepository memberRepository; //member Repository interface만 존재!
+
+    @Autowired // ac.getBean(MemberRepository.class) 의존관계 자동 주입
     public MemberServiceImpl(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }

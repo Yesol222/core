@@ -3,15 +3,10 @@ package yesol.core.order;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.internal.matchers.Or;
 import yesol.core.member.Grade;
 import yesol.core.member.Member;
 import yesol.core.member.MemberService;
-import yesol.core.member.MemberServiceImpl;
-import yesol.core.order.AppConfig;
-import yesol.core.order.Order;
-import yesol.core.order.OrderService;
-import yesol.core.order.OrderServiceImpl;
+import yesol.core.AppConfig;
 
 public class OrderServiceTest {
 

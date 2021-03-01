@@ -5,8 +5,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import yesol.core.member.Grade;
 import yesol.core.member.Member;
 import yesol.core.member.MemberService;
-import yesol.core.member.MemberServiceImpl;
-import yesol.core.order.AppConfig;
 
 public class MemberApp {
     public static void main(String[] args) {

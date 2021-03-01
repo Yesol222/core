@@ -7,7 +7,7 @@ import org.springframework.beans.factory.NoSuchBeanDefinitionException;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import yesol.core.member.MemberService;
 import yesol.core.member.MemberServiceImpl;
-import yesol.core.order.AppConfig;
+import yesol.core.AppConfig;
 
 import static org.junit.jupiter.api.Assertions.*;
 

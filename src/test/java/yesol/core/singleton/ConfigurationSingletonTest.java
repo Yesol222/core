@@ -6,7 +6,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import yesol.core.member.MemberRepository;
 import yesol.core.member.MemberServiceImpl;
-import yesol.core.order.AppConfig;
+import yesol.core.AppConfig;
 import yesol.core.order.OrderServiceImpl;
 
 public class ConfigurationSingletonTest {
