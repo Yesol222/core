@@ -2,7 +2,9 @@ package yesol.core.order;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
+import yesol.core.annotation.MainDiscountPolicy;
 import yesol.core.discount.DiscountPolicy;
 import yesol.core.discount.FixDiscountPolicy;
 import yesol.core.member.Member;
@@ -10,7 +12,7 @@ import yesol.core.member.MemberRepository;
 import yesol.core.member.MemoryMemberRepository;
 
 @Component
-@RequiredArgsConstructor
+//@RequiredArgsConstructor
 public class OrderServiceImpl implements OrderService{
 
     //private final MemberRepository memberRepository = new MemoryMemberRepository();
@@ -30,11 +32,11 @@ public class OrderServiceImpl implements OrderService{
 //    }
 
     //생정자 주입
-//    @Autowired
-//    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
-//        this.memberRepository = memberRepository;
-//        this.discountPolicy = discountPolicy;
-//    }
+    @Autowired
+    public OrderServiceImpl(MemberRepository memberRepository, @MainDiscountPolicy DiscountPolicy discountPolicy) {
+        this.memberRepository = memberRepository;
+        this.discountPolicy = discountPolicy;
+    }
 
     @Override
     public Order createOrder(Long memberId, String itemName, int itemPrice) {
